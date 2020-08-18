@@ -3,7 +3,13 @@ import {AppBar, Toolbar, Typography} from '@material-ui/core'
 
 const TodoHeader: React.FC = () => {
     return (
-        <h1>ToDo Application</h1>
+        <div>
+            <h1>ToDo Application</h1>
+            <ul>
+                <li><a href='/todo'>TodoPage</a></li>
+                <li><a href='/about'>AboutPage</a></li>
+            </ul>
+        </div>
     )
 }
 
