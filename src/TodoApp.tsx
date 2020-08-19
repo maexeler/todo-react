@@ -1,9 +1,9 @@
 import React from 'react'
-import AppLayout from './components/application/AppLayout'
-import TodoHeader from './components/todo/TodoHeader'
-import TodoPage from './components/todo/TodoPage'
-import AboutPage from './components/about/AboutPage'
-import PageNotFoundPage from './components/notfound/PageNotFoundPage'
+import AppLayout from './component/application/AppLayout'
+import TodoHeader from './component/todo/TodoHeader'
+import TodoPage from './component/todo/TodoPage'
+import AboutPage from './component/about/AboutPage'
+import PageNotFoundPage from './component/notfound/PageNotFoundPage'
 
 import { useLocation } from 'react-router-dom'
 

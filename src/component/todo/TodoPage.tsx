@@ -1,8 +1,9 @@
 import React from 'react'
+import TodoContent from './TodoContent'
 
 const TodoPage: React.FC = () => {
     return (
-        <h1>TodoPage</h1>
+        <TodoContent />
     )
 }
 
