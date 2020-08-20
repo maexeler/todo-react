@@ -6,3 +6,4 @@
 5) [Navigation](./navigation.md)
 6) [ToDo GUI](./materialui_introduction.md)
 7) [Benötigte ToDo-Komponenten](./needed_todo_components.md)
+8) [TodoListe mit aus einer Liste von Todos füllen](./gui_with_basic_data.md)
