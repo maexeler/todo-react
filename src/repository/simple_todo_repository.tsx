@@ -28,4 +28,4 @@ const todoList: ITodo[] = [
     }
 ]
 
-  export default todoList
+export default todoList
