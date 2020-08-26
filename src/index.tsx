@@ -5,11 +5,16 @@ import TodoApp from './TodoApp';
 
 import {BrowserRouter as Router} from "react-router-dom"
 
+import { StoreProvider } from 'easy-peasy'
+import store from './store/StoreModel'
+
 ReactDOM.render(
-  <React.StrictMode>
-    <Router>
-      <TodoApp />
-    </Router>
-  </React.StrictMode>,
+  <StoreProvider store={store}>
+    <React.StrictMode>
+      <Router>
+        <TodoApp />
+      </Router>
+    </React.StrictMode>
+  </StoreProvider>,
   document.getElementById('root')
 );
