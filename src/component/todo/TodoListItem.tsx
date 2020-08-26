@@ -9,29 +9,32 @@ import {
  } from '@material-ui/core'
  import DeleteForeverIcon from '@material-ui/icons/DeleteForever';
 
-
 import Todo from '../../model/todo'
+import { useStoreActions } from "../../store/StoreModel";
 
 interface TodoListItemProps {
     todo: Todo;
 }
 
-const TodoListItem: React.FC<TodoListItemProps> = (props) => {
+const TodoListItem: React.FC<TodoListItemProps> = ({todo}) => {
+    const deleteTodo = useStoreActions(actions => actions.todoModel.delete)
+    const toggleCompleted = useStoreActions(actions => actions.todoModel.toggleCompleted)
     return(
-        <ListItem key={props.todo.id}>
+        <ListItem >
             <ListItemIcon>
               <Checkbox
                 edge="start"
-                checked={props.todo.completed}
-                onClick={() => {/* should toggle completed */}}
+                color='primary'
+                checked={todo.completed}
+                onClick={() => { toggleCompleted(todo) }}
               />
             </ListItemIcon>
-            <ListItemText primary={props.todo.tittle} />
+            <ListItemText primary={todo.tittle} />
             <ListItemSecondaryAction>
               <IconButton
-                edge="end"
-                aria-label="delete todo"
-                onClick={() => {/* should delete todo */}}
+                edge='end'
+                color='secondary'
+                onClick={() => { deleteTodo(todo) }}
               >
                 <DeleteForeverIcon />
               </IconButton>
