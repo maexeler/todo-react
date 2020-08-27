@@ -9,7 +9,7 @@ const TodoList: React.FC = () => {
     return(
         <List>
             {todoList.map((todo) => 
-                {return <TodoListItem key={todo.id} todo={todo}/>}
+                { return <TodoListItem key={todo.id} todo={todo}/> }
             )}
         </List>
     )

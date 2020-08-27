@@ -15,7 +15,7 @@ export type UniqueKey = string | number | undefined
 
 export default interface Todo {
     id: UniqueKey,
-    tittle: string,
+    title: string,
     completed: boolean
 }
 ```
@@ -28,12 +28,12 @@ scr/model/todo.tsx
 ```javascript
 export class TodoImpl implements Todo {
     id: UniqueKey;
-    tittle: string;
+    title: string;
     completed: boolean
 
-    constructor(tittle: string) {
+    constructor(title: string) {
         this.id = null;
-        this.tittle = tittle
+        this.title = title
         this.completed = false
     }
 }
@@ -50,26 +50,26 @@ import ITodo from '../model/todo'
 const todoList: ITodo[] = [
     {
         "id": 4,
-        "tittle": "Do this",
+        "title": "Do this",
         "completed": false
     },
     {
         "id": 3,
-        "tittle": "Do that",
+        "title": "Do that",
         "completed": true
     },
     {
         "id": 2,
-        "tittle": "Do it again Sam",
+        "title": "Do it again Sam",
         "completed": false
     },
     {
         "id": 1,
-        "tittle": "This is very detailed ToDo that says we should do it again and again and again",
+        "title": "This is very detailed ToDo that says we should do it again and again and again",
         "completed": true
     },
     {
-        "tittle": "This is not a love song",
+        "title": "This is not a love song",
         "completed": true,
         "id": 5
     }
@@ -92,7 +92,7 @@ interface TodoListItemProps {
 
 const TodoListItem: React.FC<TodoListItemProps> = (props) => {
     return(
-        <ListItem>{props.todo.tittle}</ListItem>
+        <ListItem>{props.todo.title}</ListItem>
     )
 }
 ```
@@ -138,7 +138,7 @@ const TodoListItem: React.FC<TodoListItemProps> = (props) => {
                 onClick={() => {/* should toggle completed */}}
               />
             </ListItemIcon>
-            <ListItemText primary={props.todo.tittle} />
+            <ListItemText primary={props.todo.title} />
             <ListItemSecondaryAction>
               <IconButton
                 edge="end"

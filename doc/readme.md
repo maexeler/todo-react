@@ -9,3 +9,4 @@
 8) [TodoListe mit aus einer Liste von Todos füllen](./gui_with_basic_data.md)
 9) [State Management in React](./stateMmanagement_overview.md)
 10) [Datenanbindung an ein Backend](./stateMmanagement_with_server.md)
+11) [Daten initialisieren mit Hilfe des TodoService](./init_data_with_service.md)
