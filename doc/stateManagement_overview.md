@@ -188,7 +188,7 @@ const TodoListItem: React.FC<TodoListItemProps> = ({todo}) => {
                 onClick={() => { toggleCompleted(todo) }}
               />
             </ListItemIcon>
-            <ListItemText primary={todo.tittle} />
+            <ListItemText primary={todo.title} />
             <ListItemSecondaryAction>
               <IconButton
                 edge='end'
