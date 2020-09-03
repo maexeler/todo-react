@@ -1,9 +1,14 @@
 import React from 'react'
 
+import NewTodo from './NewTodo'
+import EditTodo from './EditTodo'
+
 const TodoView: React.FC = () => {
-    return(
-        <h1>TodoView</h1>
-    )
+
+    return(<>
+        <NewTodo />
+        <EditTodo />
+    </>)
 }
 
 export default TodoView
