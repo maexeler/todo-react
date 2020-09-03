@@ -7,10 +7,10 @@ const TodoContent: React.FC = () => {
     return (
         <Grid container direction='row' spacing={1}>
             <Grid item xs={12} sm={4}>
-                    <TodoList />
+                <TodoList />
             </Grid>
             <Grid item xs={12} sm={8}>
-                    <TodoView />
+                <TodoView />
             </Grid>
         </Grid>
     )
