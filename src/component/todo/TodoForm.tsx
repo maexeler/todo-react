@@ -15,6 +15,7 @@ interface TodoFormProps {
 const TodoForm: React.FC<TodoFormProps> = ({todo, submitText, submitFunction, resetFormAfterSubmit}) => {
 	return (
 		<Formik
+			enableReinitialize={true}
 			initialValues={{title: todo.title}}
 			validationSchema={todoValidationSchema}
 			onSubmit={(values, {resetForm}) => {
@@ -54,7 +55,7 @@ const TodoForm: React.FC<TodoFormProps> = ({todo, submitText, submitFunction, re
 }
 
 const MaterialUiField: React.FC<FieldProps & TextFieldProps> =
-	({field, form, ...textProps}) => <TextField fullWidth {...field} {...textProps}/>
+	({field, form, ...textProps}) => <TextField fullWidth multiline {...field} {...textProps}/>
 
 const todoValidationSchema = Yup.object().shape({
 	title: Yup.string().required('A ToDo is required'),

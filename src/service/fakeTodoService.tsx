@@ -22,7 +22,7 @@ class FakeTodoService implements TodoService {
 
     async addTodo(todo: Todo): Promise<Todo> {
         // Add a unique id
-        todo.id = shortid.shortid.generate()
+        todo.id = shortid()
         return new Promise( (resolve, reject) => {
             setTimeout(() => resolve(todo), 100)
         })
