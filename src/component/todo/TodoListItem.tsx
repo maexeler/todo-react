@@ -3,7 +3,6 @@ import {
     ListItem, 
     ListItemIcon, 
     Checkbox, 
-    ListItemText, 
     ListItemSecondaryAction,
     IconButton,
     Typography,
