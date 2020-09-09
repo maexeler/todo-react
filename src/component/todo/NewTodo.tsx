@@ -1,21 +1,30 @@
 import React from 'react'
-import { Typography } from '@material-ui/core'
+import { Grid, Typography } from '@material-ui/core'
 
 import  TodoForm from './TodoForm'
 import { TodoImpl } from '../../model/todo'
+import { useStoreActions } from '../../store/StoreModel'
 
 interface NewTodoProps {
 }
 
 const NewTodo: React.FC<NewTodoProps> = (props) => {
+    const addTodo = useStoreActions(actions => actions.todoModel.add)
+
     return (<>
-        <Typography variant='h3'>Create a ToDo</Typography>
-        <TodoForm
-            todo={new TodoImpl('')}
-            submitText='Create a new ToDo'
-            submitFunction={(todo)=>{console.log('new todo: ', todo)}}
-            resetFormAfterSubmit={true}
-        />
+        <Grid container direction='column' spacing={1}>
+            <Grid item >
+                <Typography variant='h3'>Add a new ToDo</Typography>
+            </Grid>
+            <Grid item >
+                <TodoForm 
+                    todo={new TodoImpl('')}
+                    submitText='Create new ToDo'
+                    submitFunction={(todo) => { addTodo(todo) }}
+                    resetFormAfterSubmit={true}
+                />
+            </Grid>
+        </Grid>
     </>)
 }
 
