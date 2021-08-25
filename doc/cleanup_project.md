@@ -20,3 +20,7 @@ Im Ordner public können die Browserinformationen wie Icons etc. angepasst werde
 
 Setzen Sie zumindest den Titel in der Datei [index.html](../public/index.html) zu ToDo Application.</br>
 Wir werden später auf diese Datei zurück kommen um benötigte CSS-Dateien einzufügen.
+
+| Previous | Home | Next  |
+| -------- |:----:| -----:|
+| <- [Das generierte Projekt anpassen](./setup_project.md) | [Inhaltsübersicht](./setup_project.md) | [Git](./git.md) ->

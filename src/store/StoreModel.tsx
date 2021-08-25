@@ -1,6 +1,6 @@
 import { createStore, createTypedHooks } from 'easy-peasy'
-// import { TodoModel, todoModel } from '../model/todo_model'
-import { TodoModel, todoModel } from '../model/todo_model_local'
+import { TodoModel, todoModel } from '../model/todo_model'
+// import { TodoModel, todoModel } from '../model/todo_model_local'
 
 // StoreModel may contain several Models
 interface StoreModel {

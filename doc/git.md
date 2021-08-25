@@ -28,3 +28,6 @@ Benutzen Sie 'GitHub Desktop' um das Projekt auf ihren GitHub-Account zu pushen.
 Jedes Mal, wenn Sie eine neue Aufgabe beginnen, eröffnen Sie einen neuen Branch in 'GitHub Desktop' und wechseln in 'Visual Studio Code' in diesen Branch. Sie können so oft committen wie Sie wollen, sowohl local als auch global.
 Nachdem Sie die Aufgabe abgeschlossen haben, machen sie ein commit, pushen den Branch zum Master und mergen ihn.
 
+| Previous | Home | Next  |
+| -------- |:----:| -----:|
+| <- [Das generierte Projekt anpassen](./cleanup_project.md) | [Inhaltsübersicht](./setup_project.md) | [Erstellen des Grundlayouts](./basic_layout.md) ->

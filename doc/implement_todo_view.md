@@ -69,3 +69,7 @@ const EditTodo: React.FC<EditTodoProps> = (props) => {
     </>)
 }
 ```
+
+| Previous | Home | Next  |
+| -------- |:----:| -----:|
+| <- [Erstellen eines ToDos-Formulars](./todo_form.md) | [Inhaltsübersicht](./setup_project.md) | [Datenanbindung der TodoView](./todo_form_with_data.md) ->

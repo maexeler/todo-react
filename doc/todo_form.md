@@ -301,3 +301,8 @@ const TodoForm: React.FC<TodoFormProps> = (
 ```
 
 Beachten Sie, dass {resetForm} eine Funktion ist, welche uns von Formik als Parameter beim aufruf der Submitfunktion übergeben wird.
+
+| Previous | Home | Next  |
+| -------- |:----:| -----:|
+| <- [Daten initialisieren mit Hilfe des TodoService](./init_data_with_service.md)
+12) [Erstellen eines ToDos-Formulars](./todo_form.md) | [Inhaltsübersicht](./setup_project.md) | [Anpassen der TodoView](./implement_todo_view.md) ->

@@ -5,16 +5,15 @@ import TodoApp from './TodoApp';
 
 import {BrowserRouter as Router} from "react-router-dom"
 
-import { StoreProvider } from 'easy-peasy'
+import {StoreProvider} from 'easy-peasy'
 import store from './store/StoreModel'
 
-import {ThemeProvider } from '@material-ui/core'
-// import { theme, } from './theme/materialui_themes'
-// import { darkTheme } from './theme/materialui_themes'
-import { customTheme } from './theme/materialui_themes'
+import {ThemeProvider} from '@material-ui/core'
+// eslint-disable-next-line
+import {theme, customTheme, darkTheme} from './theme/materialui_themes'
 
 ReactDOM.render(
-  <ThemeProvider theme={customTheme} >
+  <ThemeProvider theme={customTheme} > {/* use one of the above themes here */}
     <StoreProvider store={store}>
       <React.StrictMode>
         <Router>

@@ -29,4 +29,6 @@ In Visual Studio Code öffnen Sie ein Terminalfenster und starten die Applikatio
 npm start
 ```
 
-
+| Previous | Home | Next  |
+| -------- |:----:| -----:|
+| <- | [Inhaltsübersicht](./readme.md) | [Das generierte Projekt anpassen](./cleanup_project.md) ->

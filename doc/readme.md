@@ -12,5 +12,11 @@
 11) [Daten initialisieren mit Hilfe des TodoService](./init_data_with_service.md)
 12) [Erstellen eines ToDos-Formulars](./todo_form.md)
 13) [Anpassen der TodoView](./implement_todo_view.md)
-14) [Datenanbindung der TodoView](./todo_form_with_data.md
-)
+14) [Datenanbindung der TodoView](./todo_form_with_data.md)
+15) [Datenanbindung an ein REST-Backend](./rest_todo_service.md)
+16) [Material Ui anpassen](./fun_with_materialui.md)
+
+# Verschiedenes
+* [MVC vs. React](./overview_mvc.md)
+* [Datenhaltung in der ToDo App](./data_store_for_todo.md)
+

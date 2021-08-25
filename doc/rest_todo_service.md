@@ -54,7 +54,7 @@ async function callForData<R>(httpFun: any, uri: string, params?: any): Promise<
 Mit dieser Vorbereitung wird die Implementierung des Services simple:
 
 ```typescript
-class FakeTodoService implements TodoService {
+class RestTodoService implements TodoService {
     
     async getTodoList(): Promise<Todo[]> {
         return callForData(http.get, '/todos?_limit=15')
@@ -84,3 +84,7 @@ Welcher der beiden TodoService-Implementierungen aktiv ist, bestimmen Sie indem 
 // import todoService from'../service/fakeTodoService'
 import todoService from'../service/restTodoService'
 ```
+
+| Previous | Home | Next  |
+| -------- |:----:| -----:|
+| <- [Datenanbindung der TodoView](./todo_form_with_data.md) | [Inhaltsübersicht](./setup_project.md) | [Material Ui anpassen](./fun_with_materialui.md) ->

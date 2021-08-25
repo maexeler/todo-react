@@ -98,7 +98,6 @@ const TodoPage: React.FC = () => {
 }
 ```
 
-
-
-
-
+| Previous | Home | Next  |
+| -------- |:----:| -----:|
+| <- [Git](./git.md) | [Inhaltsübersicht](./setup_project.md) | [Navigation](./navigation.md) ->

@@ -159,3 +159,7 @@ Beachten Sie, dass Sie ggf. material-ui/icons nachinstallieren müssen.
 ```
 npm install @material-ui/icons
 ```
+
+| Previous | Home | Next  |
+| -------- |:----:| -----:|
+| <- [Benötigte ToDo-Komponenten](./needed_todo_components.md) | [Inhaltsübersicht](./setup_project.md) | [State Management in React](./stateManagement_overview.md) ->

@@ -203,3 +203,7 @@ const TodoListItem: React.FC<TodoListItemProps> = ({todo}) => {
     )
 }
 ```
+
+| Previous | Home | Next  |
+| -------- |:----:| -----:|
+| <- [TodoListe mit aus einer Liste von Todos füllen](./gui_with_basic_data.md) | [Inhaltsübersicht](./setup_project.md) | [Datenanbindung an ein Backend](./stateManagement_with_server.md) ->

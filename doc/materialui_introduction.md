@@ -64,3 +64,7 @@ const TodoHeader: React.FC = () => {
     )
 }
 ```
+
+| Previous | Home | Next  |
+| -------- |:----:| -----:|
+| <- [Navigation](./navigation.md) | [Inhaltsübersicht](./setup_project.md) |  [Benötigte ToDo-Komponenten](./needed_todo_components.md) ->

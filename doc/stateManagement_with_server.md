@@ -121,4 +121,6 @@ const todoService: TodoService = {
 export default todoService
 ```
 
-
+| Previous | Home | Next  |
+| -------- |:----:| -----:|
+| <- [State Management in React](./stateManagement_overview.md) | [Inhaltsübersicht](./setup_project.md) | [Daten initialisieren mit Hilfe des TodoService](./init_data_with_service.md) ->

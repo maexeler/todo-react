@@ -10,8 +10,7 @@ Als Erstes brauchen wir einen neuen Git-Branch, navigation. Erstellen Sie diesen
 Erstellen Sie dann die folgenden Komponenten:
 
 ### AboutPage
-./src/about/AboutPage.tsx
-.src/components/about/AboutPage.tsx
+.src/component/about/AboutPage.tsx
 ```javascript
 const AboutPage: React.FC = () => {
     return (
@@ -116,3 +115,7 @@ const TodoHeader: React.FC = () => {
     )
 }
 ```
+
+| Previous | Home | Next  |
+| -------- |:----:| -----:|
+| <- [Erstellen des Grundlayouts](./basic_layout.md) | [Inhaltsübersicht](./setup_project.md) |  [ToDo GUI](./materialui_introduction.md) ->

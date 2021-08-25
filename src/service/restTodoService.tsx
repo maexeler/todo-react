@@ -20,7 +20,7 @@ async function callForData<R>(httpFun: any, uri: string, params?: any): Promise<
     })
 }
 
-class FakeTodoService implements TodoService {
+class RestTodoService implements TodoService {
     
     async getTodoList(): Promise<Todo[]> {
         return callForData(http.get, '/todos?_limit=15')
@@ -39,5 +39,5 @@ class FakeTodoService implements TodoService {
     }
 }
 
-const todoService = new FakeTodoService()
+const todoService = new RestTodoService()
 export default todoService

@@ -79,3 +79,7 @@ const TodoView: React.FC = () => {
     )
 }
 ```
+
+| Previous | Home | Next  |
+| -------- |:----:| -----:|
+| <- [ToDo GUI](./materialui_introduction.md) | [Inhaltsübersicht](./setup_project.md) |  [TodoListe mit aus einer Liste von Todos füllen](./gui_with_basic_data.md) ->

@@ -15,7 +15,7 @@ export const customTheme = createMuiTheme({
 })
 
 export const darkTheme = createMuiTheme({
-    palette: {
-      type: 'dark',
-    },
-  })
+  palette: {
+    type: 'dark',
+  },
+})

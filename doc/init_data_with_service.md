@@ -197,3 +197,7 @@ class FakeTodoService implements TodoService {
 const todoService = new FakeTodoService()
 export default todoService
 ```
+
+| Previous | Home | Next  |
+| -------- |:----:| -----:|
+| <- [Datenanbindung an ein Backend](./stateManagement_with_server.md) | [Inhaltsübersicht](./setup_project.md) | [Erstellen eines ToDos-Formulars](./todo_form.md) ->
