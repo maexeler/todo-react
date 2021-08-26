@@ -19,4 +19,5 @@
 # Verschiedenes
 * [MVC vs. React](./overview_mvc.md)
 * [Datenhaltung in der ToDo App](./data_store_for_todo.md)
+* [Just for Fun: vscode snipets](./vscode_macro/react_functional_component_macros.md)
 
