@@ -116,6 +116,15 @@ const TodoHeader: React.FC = () => {
 }
 ```
 
+## Git Branch mergen
+Wir haben die Navigation erfolgreich implementiert und wollen nun unseren Navigation branch mit dem Master vereinigen.
+* Gehen sie zu Github Desktop und wählen sie den master branch aus. 
+* Wählen sie Branch->Merge into current branch..., selektieren sie 'navigation' und klicken sie 'Create merge commit'
+
+Erstellen sie einen neuen branch oder arbeiten sie auf dem master weiter.  
+Beachten sie, dass sie den gewünschten branch in Visual ggf. auswählen müssen.
+
+
 | Previous | Home | Next  |
 | -------- |:----:| -----:|
 | <- [Erstellen des Grundlayouts](./basic_layout.md) | [Inhaltsübersicht](./setup_project.md) |  [ToDo GUI](./materialui_introduction.md) ->

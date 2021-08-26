@@ -1,6 +1,6 @@
-import ITodo from '../model/todo'
+import Todo from '../model/todo'
 
-const todoList: ITodo[] = [
+const todoList: Todo[] = [
     {
         "id": 4,
         "title": "Do this",

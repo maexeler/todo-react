@@ -45,9 +45,9 @@ Später werden wir die Daten in einem lokalen- oder in einem Remote-Repository a
 
 src/repository/simple_todo_repository.tsx
 ```javascript
-import ITodo from '../model/todo'
+import Todo from '../model/todo'
 
-const todoList: ITodo[] = [
+const todoList: Todo[] = [
     {
         "id": 4,
         "title": "Do this",
