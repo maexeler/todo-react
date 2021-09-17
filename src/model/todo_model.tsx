@@ -40,13 +40,13 @@ const todoModel: TodoModel = {
 
     add: thunk(async (actions, todo) => {
         await todoService.addTodo(todo).then(
-            () => { actions._add(todo) }
+            (todo: Todo) => { actions._add(todo) }
         )
     }),
 
     modify: thunk(async (actions, todo) => {
         await todoService.updateTodo(todo).then(
-            () => { actions._replace(todo) }
+            (todo: Todo) => { actions._replace(todo) }
         )
     }),
 

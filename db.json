@@ -24,11 +24,6 @@
       "title": "This is not a love song",
       "completed": true,
       "id": 5
-    },
-    {
-      "title": "Kafipausä - jetzt!!!",
-      "completed": false,
-      "id": 6
     }
   ],
   "customers": [
