@@ -1,5 +1,23 @@
 # TodoService mit REST-Anbindung
 
+## Einen Entwicklungsserver aufsetzen
+für das weitere Vorgehen brauchen wir eine Backend (einen Server).
+
+Lassen sie uns einen Entwicklungsserver einrichten, der au den gegebenen Daten automatisch ein REST-Interface erzeugt.
+
+Installieren sie den [typicode server](https://github.com/typicode/json-server) mit:
+```
+npm install -g json-server
+```
+Anschliessend kreieren sie die Datei [db.json](../db.json) und füllen diese mit passenden Daten.
+
+Dann starten sie den Server in einem neuen Terminal mit:
+```
+json-server --watch db.json --port 3003
+```
+
+## Den Rest-Service erstellen
+
 Wir haben uns bereits eine Serviceimplementierung geschrieben, [FakeTodoService](../src/service/fakeTodoService.tsx), welche ein Backendzugriff simuliert.
 
 Wir wollen nun eine Implementierung schreiben, welche über ein REST-Interface auf einen Server zugreift, die Daten dort abholt und dort ändert.
@@ -23,9 +41,11 @@ Als erstes müssen wir uns ein http-Objekt erstellen. Dieses benötigt eine Basi
 ```typescript
 import axios from 'axios'
 ...
+const baseURL: string = 'http://localhost:3003'
+
 // Create an axios instance for the accssses to the server
 const http = axios.create({
-    baseURL: 'https://jsonplaceholder.typicode.com',
+    baseURL: baseURL,
     timeout: 2000,
     headers: {'Content-Type': 'application/json'},
 })

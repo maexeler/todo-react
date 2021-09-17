@@ -1,0 +1,74 @@
+{
+  "todos": [
+    {
+      "id": 4,
+      "title": "Don't do this",
+      "completed": true
+    },
+    {
+      "id": 3,
+      "title": "Do that",
+      "completed": true
+    },
+    {
+      "id": 2,
+      "title": "Do it again Sam",
+      "completed": true
+    },
+    {
+      "id": 1,
+      "title": "This is very detailed ToDo that says we should do it again and again and again",
+      "completed": true
+    },
+    {
+      "title": "This is not a love song",
+      "completed": true,
+      "id": 5
+    },
+    {
+      "title": "Kafipausä - jetzt!!!",
+      "completed": false,
+      "id": 6
+    }
+  ],
+  "customers": [
+    {
+      "id": 1,
+      "name": "Max"
+    },
+    {
+      "id": 2,
+      "name": "Trax"
+    },
+    {
+      "id": 3,
+      "name": "Gigax"
+    }
+  ],
+  "memos": [
+    {
+      "id": 1,
+      "customer_id": 1,
+      "note": "this is not a love song and it will never be",
+      "date": 0
+    },
+    {
+      "id": 2,
+      "customer_id": 1,
+      "note": "this is still not a love song",
+      "date": 1
+    },
+    {
+      "id": 3,
+      "customer_id": 2,
+      "note": "Memo for Trax",
+      "date": 2
+    },
+    {
+      "id": 4,
+      "customer_id": 3,
+      "note": "Memo for Gigax",
+      "date": 3
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 import { Action, Computed, action, computed } from 'easy-peasy'
 
 import Todo from './todo'
-import todoList from '../repository/simple_todo_repository'
+import todoList from '../data/todo_data'
 
 const shortid = require('shortid');
 

@@ -1,6 +1,6 @@
 import TodoService from './TodoService'
 import Todo from '../model/todo'
-import todos from '../repository/simple_todo_repository'
+import todos from '../data/todo_data'
 
 // npm install shortid
 const shortid = require('shortid');

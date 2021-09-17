@@ -74,15 +74,15 @@ Wir wollen ein 'React Functional Component' bauen und dazu die Abkürzung 'rfc' 
 	"React Functional Component": {
 		"prefix": "rfc",
 		"body": [
-"import React from 'react';",
-"",
-"const ${0:Name}: React.FC = () => {",
-"    return (",
-"        <span>${0:Name}</span>",
-"    );",
-"}",
-"",
-"export default ${0:Name}"
+            "import React from 'react';",
+            "",
+            "const ${0:Name}: React.FC = () => {",
+            "    return (",
+            "        <span>${0:Name}</span>",
+            "    );",
+            "}",
+            "",
+            "export default ${0:Name}"
 		],
 		"description": "Create a React Functional Component without properties"
 	},
