@@ -13,7 +13,7 @@ import {ThemeProvider} from '@material-ui/core'
 import {theme, customTheme, darkTheme} from './theme/materialui_themes'
 
 ReactDOM.render(
-  <ThemeProvider theme={customTheme} > {/* use one of the above themes here */}
+  <ThemeProvider theme={theme} > {/* use one of the above themes here */}
     <StoreProvider store={store}>
       <React.StrictMode>
         <Router>

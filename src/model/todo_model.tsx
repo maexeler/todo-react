@@ -24,6 +24,7 @@ export interface TodoModel {
     // Display State & Actions
     selectedTodo: Todo | null
     setSelectedTodo: Action<TodoModel, Todo>
+    resetSelectedTodo: Action<TodoModel>
 
     pendingTodos: Computed<TodoModel, number>
 }
@@ -96,6 +97,10 @@ const todoModel: TodoModel = {
 
     setSelectedTodo: action((state, todo) => {
         state.selectedTodo = {...todo}
+    }),
+
+    resetSelectedTodo: action((state) => {
+        state.selectedTodo = null
     }),
 
     pendingTodos: computed((state) => {

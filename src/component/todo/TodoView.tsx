@@ -5,12 +5,18 @@ import EditTodo from './EditTodo'
 
 import { Grid } from '@material-ui/core'
 
+import { useStoreState } from "../../store/StoreModel";
+
+
 const TodoView: React.FC = () => {
+    const selectedTodo = useStoreState(state => state.todoModel.selectedTodo)
 
     return(
         <Grid container direction='column' spacing={1} >
-            <Grid item ><NewTodo /></Grid>
-            <Grid item ><EditTodo /></Grid>
+            { selectedTodo === null
+                ? <Grid item ><NewTodo /></Grid>
+                : <Grid item ><EditTodo /></Grid>
+            }
         </Grid>
     )
 }
