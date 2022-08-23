@@ -1,8 +1,8 @@
 import { Action, Thunk, Computed, action, thunk, computed } from 'easy-peasy'
 
 import Todo from './todo'
-// import todoService from'../service/fakeTodoService'
-import todoService from'../service/restTodoService'
+import todoService from'../service/fakeTodoService'
+// import todoService from'../service/restTodoService'
 
 export interface TodoModel {
     todos: Todo[]
