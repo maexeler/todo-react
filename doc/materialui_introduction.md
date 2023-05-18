@@ -40,7 +40,8 @@ const TodoHeader: React.FC = () => {
     )
 }
 
-export default TodoHeader```
+export default TodoHeader
+```
 Was bleibt, ist die Aufgabe bei einem Button-Click die passende Seite aufzurufen.
 
 Eine kurze Suche im Netz ergiebt, dass die Bibliothek 'react-router-dom' die Funktion ```useHistory()``` besitzt, welche wir verwenden können um uns die Routerhistory zu besorgen und dorthin einen neuen Link zu pushen.
