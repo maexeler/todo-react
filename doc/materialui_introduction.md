@@ -11,23 +11,36 @@ Vergessen Sie nicht, die nötigen Imports zu kopieren.
 
 Die TodoHeader-Komponente sieht nun so aus:
 ```javascript
+import { AppBar, Button, Toolbar, Typography } from "@mui/material"
+import {useNavigate} from 'react-router-dom'
+
 const TodoHeader: React.FC = () => {
-    const classes = useStyles();
+    const navigate = useNavigate();
 
     return (
-        // Stolen from https://material-ui.com/components/app-bar/#app-bar
-        <AppBar position="static">
-            <Toolbar>
-                <Typography variant="h6" className={classes.title}>
+        <AppBar position='static' >
+            <Toolbar >
+                <Typography variant='h6' component='div' sx={{flexGrow: 1}}> 
                     ToDo Application
                 </Typography>
-                <Button color="inherit">ToDo</Button>
-                <Button color="inherit">About</Button>
+                <Button 
+                    color='inherit'
+                    onClick={()=>{navigate('/todo')}}
+                >
+                    Todo Page
+                </Button>
+                <Button 
+                    color='inherit'
+                    onClick={()=>{navigate('/about')}}
+                >
+                    About Page
+                </Button>
             </Toolbar>
         </AppBar>
     )
 }
-```
+
+export default TodoHeader```
 Was bleibt, ist die Aufgabe bei einem Button-Click die passende Seite aufzurufen.
 
 Eine kurze Suche im Netz ergiebt, dass die Bibliothek 'react-router-dom' die Funktion ```useHistory()``` besitzt, welche wir verwenden können um uns die Routerhistory zu besorgen und dorthin einen neuen Link zu pushen.
