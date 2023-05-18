@@ -116,6 +116,9 @@ const TodoList: React.FC = () => {
 ```
 
 ## Please make it beautyfull stupid
+```
+npm install @mui/icons-material @mui/material @emotion/styled @emotion/react
+```
 Oh ja, klar doch. Wir benutzen MaterialUi um das Ding anständig darzustellen.
 
 Jedes TodoListItem soll Links eine Checkbox haben für Erledigt oder nicht,
