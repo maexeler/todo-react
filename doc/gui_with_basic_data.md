@@ -11,7 +11,7 @@ Ein Todo besteht aus einer ID, einem Titel und einem Feld welches weiss, ob ein 
 
 scr/model/todo.tsx
 ```javascript
-export type UniqueKey = string | number | undefined
+export type UniqueKey = string | number | null
 
 export default interface Todo {
     id: UniqueKey,
