@@ -161,7 +161,8 @@ const TodoListItem: React.FC<TodoListItemProps> = (props) => {
     )
 }
 
-export default TodoListItem ```
+export default TodoListItem 
+```
 
 Passende Icons finden Sie in [material-icons](https://material-ui.com/components/material-icons/).
 
