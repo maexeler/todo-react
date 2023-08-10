@@ -3,6 +3,9 @@ import axios from 'axios'
 import TodoService from './TodoService'
 import Todo from '../model/todo'
 
+// a) If you would like to have a local server:
+// --------------------------------------------
+//
 // 1) Load an typicode server by:
 // npm install -g json-server
 
@@ -11,10 +14,16 @@ import Todo from '../model/todo'
 // 3) Start the typicode server in terminal with:
 // json-server --watch db.json --port 3003
 
-const baseURL: string = 'http://localhost:3003'
+// b) If you would like to use an existing server:
+// -----------------------------------------------
+//
+// use the typicode server from jsonplaceholder
+
+// const baseURL: string = 'http://localhost:3003'
+const baseURL: string = 'https://jsonplaceholder.typicode.com'
 
 // Let's create an axios instance
-// for the accssses to jsonplaceholder
+// for the accssses to the server
 const http = axios.create({
     baseURL: baseURL,
     timeout: 2000,
