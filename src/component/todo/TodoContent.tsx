@@ -1,19 +1,22 @@
-import React from 'react'
-import { Grid, Paper } from '@material-ui/core'
+import { Grid, Paper, useMediaQuery, useTheme  } from '@mui/material'
 import TodoList from './TodoList'
 import TodoView from './TodoView'
 
 const TodoContent: React.FC = () => {
+    const theme = useTheme();
     return (
-        <Paper>
-        <Grid container direction='row' spacing={1}>
-            <Grid item xs={12} sm={4}>
-                <TodoList />
+        useMediaQuery(theme.breakpoints.up('sm'))
+        ? <Paper>
+            <Grid container spacing={1}>
+                <Grid item xs={4}> <TodoList/> </Grid>
+                <Grid item xs={8}> <TodoView /> </Grid>
             </Grid>
-            <Grid item xs={12} sm={8}>
-                <TodoView />
+        </Paper>
+        : <Paper>
+            <Grid container spacing={1}>
+                <Grid item xs={12}> <TodoView /> </Grid>
+                <Grid item xs={12}> <TodoList /> </Grid>
             </Grid>
-        </Grid>
         </Paper>
     )
 }

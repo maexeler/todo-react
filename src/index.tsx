@@ -1,19 +1,20 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
+import ReactDOM from 'react-dom/client';
+import { BrowserRouter as Router } from 'react-router-dom'
 import TodoApp from './TodoApp';
-
-import {BrowserRouter as Router} from "react-router-dom"
 
 import {StoreProvider} from 'easy-peasy'
 import store from './store/StoreModel'
 
-import {ThemeProvider} from '@material-ui/core'
-// eslint-disable-next-line
-import {theme, customTheme, darkTheme} from './theme/materialui_themes'
+import {ThemeProvider} from '@mui/material'
+// eslint-disable-next-line 
+import {theme, themeDark, themeCustom, } from './theme/materialui_themes'
 
-ReactDOM.render(
-  <ThemeProvider theme={theme} > {/* use one of the above themes here */}
+const root = ReactDOM.createRoot(
+  document.getElementById('root') as HTMLElement
+);
+root.render(
+ <ThemeProvider theme={theme} > {/* use one of the above themes here */}
     <StoreProvider store={store}>
       <React.StrictMode>
         <Router>
@@ -22,5 +23,4 @@ ReactDOM.render(
       </React.StrictMode>
     </StoreProvider>
   </ThemeProvider>,
-  document.getElementById('root')
 );

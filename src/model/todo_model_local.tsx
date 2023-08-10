@@ -3,7 +3,7 @@ import { Action, Computed, action, computed } from 'easy-peasy'
 import Todo from './todo'
 import todoList from '../data/todo_data'
 
-const shortid = require('shortid');
+import { nanoid } from 'nanoid'
 
 export interface TodoModel {
     todos: Todo[]
@@ -32,7 +32,7 @@ const todoModel: TodoModel = {
     }),
 
     add: action((state, todo) => {
-        todo.id = shortid() // Generate unique id
+        todo.id = nanoid() // Generate unique id
         state.todos = [{...todo}, ...state.todos]
     }),
 

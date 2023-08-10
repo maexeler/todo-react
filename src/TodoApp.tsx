@@ -1,4 +1,3 @@
-import React from 'react'
 import AppLayout from './component/application/AppLayout'
 import TodoHeader from './component/todo/TodoHeader'
 import TodoPage from './component/todo/TodoPage'

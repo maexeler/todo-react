@@ -155,9 +155,7 @@ import TodoService from './TodoService'
 import Todo from '../model/todo'
 import todos from '../repository/simple_todo_repository'
 
-// npm install shortid
-const shortid = require('shortid');
-
+import { nanoid } from 'nanoid'
 class FakeTodoService implements TodoService {
 
     _todos: Todo[]
@@ -175,7 +173,7 @@ class FakeTodoService implements TodoService {
 
     async addTodo(todo: Todo): Promise<Todo> {
         // Add a unique id
-        todo.id = shortid.shortid.generate()
+        todo.id = nanoid()
         return new Promise( (resolve, reject) => {
             setTimeout(() => resolve(todo), 100)
         })

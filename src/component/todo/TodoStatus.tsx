@@ -1,5 +1,5 @@
 import React from 'react'
-import { Paper, Typography} from '@material-ui/core'
+import { Paper, Typography} from '@mui/material'
 
 import { useStoreState } from '../../store/StoreModel'
 
@@ -10,18 +10,14 @@ const TodoStatus: React.FC<TodoStatusProps> = (props) => {
     const job = (pendingTodos === 1) ? 'duty' : 'duties'
     const info = (pendingTodos === 0) ? 'Nothing to do' : `${pendingTodos}  more ${job} to do`
     return (
-        // <Card >
-        //     <CardContent>
         <Paper >
                 <Typography
-                    variant='h3'
+                    variant='h4'
                     align='center'
                 >
                     {info}
                 </Typography>
         </Paper>
-        //     </CardContent>
-        // </Card>
     )
 }
 

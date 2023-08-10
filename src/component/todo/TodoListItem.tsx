@@ -6,8 +6,8 @@ import {
     ListItemSecondaryAction,
     IconButton,
     Typography,
- } from '@material-ui/core'
- import DeleteForeverIcon from '@material-ui/icons/DeleteForever';
+ } from '@mui/material'
+ import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
 
 import Todo from '../../model/todo'
 import { useStoreState, useStoreActions } from "../../store/StoreModel";

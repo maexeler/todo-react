@@ -3,7 +3,7 @@ import React from 'react'
 import NewTodo from './NewTodo'
 import EditTodo from './EditTodo'
 
-import { Grid } from '@material-ui/core'
+import { Grid } from '@mui/material'
 
 import { useStoreState } from "../../store/StoreModel";
 
@@ -14,8 +14,8 @@ const TodoView: React.FC = () => {
     return(
         <Grid container direction='column' spacing={1} >
             { selectedTodo === null
-                ? <Grid item ><NewTodo /></Grid>
-                : <Grid item ><EditTodo /></Grid>
+                ? <Grid item><NewTodo /></Grid>
+                : <Grid item><EditTodo /></Grid>
             }
         </Grid>
     )

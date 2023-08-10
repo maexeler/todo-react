@@ -1,5 +1,4 @@
-import React from 'react'
-import { Grid, Typography } from '@material-ui/core'
+import { Grid, Typography } from '@mui/material'
 
 import  TodoForm from './TodoForm'
 import { TodoImpl } from '../../model/todo'
@@ -19,7 +18,7 @@ const NewTodo: React.FC<NewTodoProps> = (props) => {
             <Grid item >
                 <TodoForm 
                     todo={new TodoImpl('')}
-                    submitText='Create new ToDo'
+                    submitText='Add ToDo'
                     submitFunction={(todo) => { addTodo(todo) }}
                     resetFormAfterSubmit={true}
                 />
