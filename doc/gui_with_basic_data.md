@@ -11,7 +11,7 @@ Ein Todo besteht aus einer ID, einem Titel und einem Feld welches weiss, ob ein 
 
 scr/model/todo.tsx
 ```javascript
-export type UniqueKey = string | number | undefined
+export type UniqueKey = string | number | null
 
 export default interface Todo {
     id: UniqueKey,
@@ -116,6 +116,9 @@ const TodoList: React.FC = () => {
 ```
 
 ## Please make it beautyfull stupid
+```
+npm install @mui/icons-material @mui/material @emotion/styled @emotion/react
+```
 Oh ja, klar doch. Wir benutzen MaterialUi um das Ding anständig darzustellen.
 
 Jedes TodoListItem soll Links eine Checkbox haben für Erledigt oder nicht,
@@ -125,12 +128,19 @@ Wir suchen wieder nach einem passenden Beispiel in MaterialUI [List Controls Che
 
 src/component/todo/TodoListItem.tsx
 ```javascript
-...
-import DeleteForeverIcon from '@material-ui/icons/DeleteForever';
+import { Checkbox, IconButton, ListItem, ListItemIcon, ListItemSecondaryAction, ListItemText } from "@mui/material";
+import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
+
+import Todo from '../../model/todo'
+
+interface TodoListItemProps {
+    todo: Todo;
+}
 
 const TodoListItem: React.FC<TodoListItemProps> = (props) => {
     return(
         <ListItem key={props.todo.id}>
+            
             <ListItemIcon>
               <Checkbox
                 edge="start"
@@ -142,7 +152,6 @@ const TodoListItem: React.FC<TodoListItemProps> = (props) => {
             <ListItemSecondaryAction>
               <IconButton
                 edge="end"
-                aria-label="delete todo"
                 onClick={() => {/* should delete todo */}}
               >
                 <DeleteForeverIcon />
@@ -151,6 +160,8 @@ const TodoListItem: React.FC<TodoListItemProps> = (props) => {
         </ListItem>
     )
 }
+
+export default TodoListItem 
 ```
 
 Passende Icons finden Sie in [material-icons](https://material-ui.com/components/material-icons/).

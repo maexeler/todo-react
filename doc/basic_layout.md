@@ -9,6 +9,7 @@ Wir werden die Komponenten aus [Material UI](https://material-ui.com/) verwenden
 
 ```
 npm install @material-ui/core
+npm install @mui/material @emotion/react @emotion/styled
 ```
 Anschliessend ergänzen Sie die Datei [index.html](../public/index.html) mit der Zeile
 
